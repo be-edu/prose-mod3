@@ -27,7 +27,7 @@ jobs:
       - name: Add unit test coverage to summary
         run: |
           {
-            echo "## unit test coverage"
+            echo "## unit test coverage summary"
             echo
             echo '```text'
             go tool cover -func=coverage.xml
