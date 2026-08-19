@@ -23,13 +23,3 @@ jobs:
 
       - name: Unit test
         run: go test ./prose -v -coverprofile=coverage.xml -covermode=atomic
-
-      - name: Add unit test coverage to summary
-        run: |
-          {
-            echo "## unit test coverage summary"
-            echo
-            echo '```text'
-            go tool cover -func=coverage.xml
-            echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
