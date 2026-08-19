@@ -30,6 +30,6 @@ jobs:
             echo "## Go test coverage"
             echo
             echo '```text'
-            go tool cover -func=coverage.out
+            go tool cover -func=coverage.xml
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
